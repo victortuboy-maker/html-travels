@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel Package Details</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="logo">🌍 VictoriousGodswillTravel&ToursLtd</div>
+</header>
+
+<div class="product-container">
+
+    <div class="product-image">
+        <img src="paris.jpg" alt="Paris Trip">
+    </div>
+
+    <div class="product-details">
+        <h2>Paris Romantic Getaway</h2>
+        <p>Experience 5 days in Paris with hotel, breakfast, and city tour included.</p>
+
+        <p class="rating">⭐⭐⭐⭐☆ (4.5/5)</p>
+        <p>1,245 people have booked this trip</p>
+
+        <h3>$1,200 per person</h3>
+
+        <div class="quantity">
+            <button onclick="decrease()">-</button>
+            <span id="count">1</span>
+            <button onclick="increase()">+</button>
+        </div>
+
+        <button class="buy-btn">Book Now</button>
+<hr>
+
+<h3>Payment Details</h3>
+
+<form id="paymentForm">
+
+    <label>Full Name</label>
+    <input type="text" required>
+
+    <label>Card Number</label>
+    <input type="text" placeholder="1234 5678 9012 3456" required>
+
+    <label>Expiry Date</label>
+    <input type="month" required>
+
+    <label>CVV</label>
+    <input type="password" maxlength="3" required>
+
+    <label>Billing Address</label>
+    <input type="text" required>
+
+    <h3>Total: $<span id="totalPrice">1200</span></h3>
+
+    <button type="submit" class="pay-btn">Pay Now</button>
+
+</form>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
